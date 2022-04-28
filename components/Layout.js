@@ -1,16 +1,11 @@
 import style from "@/styles/Layout.module.css";
-import {Nav, Footer, Table, Modal,Header,Pagination} from '@/components'
+import { Table, Modal,Pagination} from '@/components'
 
 export function Layout({ children }){
-  return (<div className={style.container}>
-            <Nav/>
+  return (<div className={style.container}> 
     <main className={style.main}>{children}</main>
-    <Footer/>
-    <Header/>
-    <Nav/>
     <Table/>
     <Pagination/>
-    <Footer/>
     <Modal/>
     </div>
   );
